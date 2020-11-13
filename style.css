@@ -95,9 +95,10 @@ h1 span {
 #invitation .phone .info {
   font-weight: 700;
   font-size: 18px;
+  line-height: 20px;
 }
 
-p, a , img { vertical-align: middle;}
+.info, a , img { vertical-align: middle;}
 
 
 /* 갤러리 */
@@ -188,6 +189,7 @@ form {
   margin-bottom: 45px;
   background: #feebe5;
   font-family: "Noto Sans";
+  font-size: 16px;
   color: #436300;
   border-radius: 4px;
   }
@@ -221,8 +223,10 @@ form {
   margin-left: 6.5%;
   text-align: center;
   font-family: "Noto Sans";
+  font-size: 16px;
   color: #436300;
   border-radius: 4px;
+
 }
 footer{
   height: 140px; width: 100%;
@@ -234,12 +238,13 @@ footer{
   padding-top: 50px;
   font-family: "Noto Sans";
 }
-#txt h1{
+#txt h1, #txt.company {
   background: #363636;
   text-align: center;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+  font-family: "Noto Sans";
 }
 .company {
   width: 100%; height: 50px;
