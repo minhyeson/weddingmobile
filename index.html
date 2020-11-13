@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>모바일 청첩장</title>
+  <!-- 나눔고딕 -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <!-- 나눔명조 -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- 사용자 CSS -->
+  <link rel="stylesheet" href="./grid.css">
+  <link rel="stylesheet" href="./style.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <section id="main">
+    <div class="title_text">
+      <h1>손    민    혜    <span>   그 리 고   </span>    한    선    호</h1>
+      <p class="date">2021.05.15 SAT PM 11:00</p>
+      <p class="address">서울 신라호텔 영빈관 1층</p>
+    </div>
+  </section>
+
+  <section id="invitation">
+    <div id="smallflower"></div>
+    <h1>결혼합니다</h1>
+    <p>
+      오래전 작은 인연이 저희를 연인으로 만들었고<br> 
+      지금 그 인연으로 저희 하나가 됩니다.<br> 
+      아직은 많이 부족하지만 늘 그 인연을 생각하며<br> 
+      서로 아껴주고 사랑하며 살겠습니다.<br> 
+      오셔서 지켜봐주시고 축하해주십시오.<br> 
+    </p>
+    <div class="phone">
+      <p class="info">
+        신랑 한선호
+        <a href="tel:010-123-1234">
+          <img src="./images/mobile.png" 
+          alt="mobile"width="50px"height="50px">
+        </a>
+        <a href="tel:010-123-1234">
+          <img src="./images/kakaotalk.png" 
+          alt="kakaotalk"width="40px"height="40px">
+        </a>
+      </p>
+      <p class="info">
+        신부 손민혜
+        <a href="tel:010-123-1234">
+          <img src="./images/mobile2.png" 
+          alt="mobile"width="50px"height="50px">
+        </a>
+        <a href="tel:010-123-1234">
+          <img src="./images/kakaotalk.png" 
+          alt="kakaotalk"width="40px"height="40px">
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div id="smallflower"></div>
+    <h1>눈부신 날의 웨딩마치</h1>
+    <div class="large_img">
+      <img 
+        class="img-responsive"
+        src="./images/1.jpg" alt="large image">
+    </div>
+    <div class="small_img container">
+      <ul class="row">
+        <li class="col_4"><img class="img-responsive" src="images/2.jpg" alt="small image"></li>
+        <li class="col_4"><img class="img-responsive" src="./images/3.jpg" alt="small image"></li>
+        <li class="col_4"><img class="img-responsive" src="./images/4.jpg" alt="small image"></li>
+        <li class="col_4"><img class="img-responsive" src="./images/5.jpg" alt="small image"></li>
+        <li class="col_4"><img class="img-responsive" src="./images/6.jpg" alt="small image"></li>
+        <li class="col_4"><img class="img-responsive" src="./images/7.jpg" alt="small image"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="video">
+    <div id="smallflower"></div>
+    <h1>소중한 날의 모든순간</h1>
+    <iframe width="100%" height="450" src="https://www.youtube.com/embed/GgNaKm--C8s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <section id="location">
+    <div id="smallflower"></div>
+    <div class="container">
+      <h1>오시는 길</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9398470003707!2d127.00397281587885!3d37.556480979799744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca31ac955c729%3A0xf59a9e4cb92068e!2z7ISc7Jq47Iug65287Zi47YWUIOyYgeu5iOq0gA!5e0!3m2!1sen!2skr!4v1605062057698!5m2!1sen!2skr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="shilla">
+      <h1>서울신라호텔 영빈관<span><br>서울 중구 동호로 249<br>02-2230-3321</span></h1>
+      <p class="transportation">
+        자가용안내<br>
+        동대입구역5번 출구에서100m직진<br>
+        지하철안내<br>
+        동대입구역5번 출구에서417m<br>
+        피로연안내<br>
+        서울신라호텔 영빈관 1층<br></p>
+    </div>
+  </section>
+  <section class="message">
+    <div id="smallflower"></div>
+    <div id="wrapper">
+      <h2>신랑 신부에게 축하인사 남겨주세요.</h2>
+      <form onsubmit="return false;">
+        <!-- 할일 입력 -->
+        <p>Name:<input type="text" id="item" focus></p>
+        <p>Password:<input type="text" id="item" focus></p>
+        <p>Message:<input type="text" id="item" focus></p>
+        <!-- 추가 버튼 -->
+        <button type="button" id="add" class="addBtn">축하메시지 남기기</button>
+      </form>
+      <!-- 점검 목록이 표시되는 영역 -->
+      <div id="itemList">
+      </div>
+      <a href="#"><div class="button">더보기</div></a>
+      <a href="#"><div class="button">전체보기</div></a>
+    </div>
+  
+    <script>
+      // 점검 목록을 저장할 배열 변수
+      var itemList = [];
+      var addBtn = document.querySelector('#add'); // 추가버튼
+  
+      // #itemList에 목록 출력
+      var showList = function () {
+        var list = '<ul>';
+        for (var i = 0; i < itemList.length; i++) {
+          list += '<li>' + itemList[i] +    
+            "<span class='close' id='" + i + "'>X</span>" + '</li>';
+        }
+        list += '</ul>';
+        document.querySelector('#itemList').innerHTML = list;
+        removeList();
+  
+      }
+  
+      //목록삭제함수
+      var removeList = function() {
+        // 삭제 버튼을 모두 선택 후 이벤트 적용
+        var remove = document.querySelectorAll('.close');
+        for(var i = 0; i < remove.length; i++) {
+          remove[i].addEventListener('click', function(){
+            var id = this.getAttribute('id');
+            console.log(id);
+            //해당 id의 배열을 삭제
+            itemList.splice(id, 1);
+            showList();
+          });
+        }
+      }
+      var addList = function () {
+        // #item 입력요소의 입력값을 가져옴
+        var item = document.querySelector('#item').value;
+        // 입력된 값이 있을때 배열에 값을 저장
+        if (item) {
+          itemList.push(item);
+          // 입력란 비우기
+          document.querySelector('#item').value = "";
+          // 다시 입력란에 포커스 적용
+          document.querySelector('#item').focus();
+        }
+        console.log(itemList);
+  
+        showList();
+      }
+  
+      // 버튼 클릭 이벤트
+      addBtn.addEventListener('click', addList);
+    </script>
+  </section>
+
+  <footer>
+    <div id="txt">
+      <h1>2021.05.15 SAT PM 11:00 <span><br>서울 신라호텔 영빈관 1층</span></h1>
+    </div>
+    <div class="company">MINA.company</div>
+  </footer>
+</body>
+</html>

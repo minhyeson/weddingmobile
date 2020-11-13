@@ -1,0 +1,246 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul { list-style-type: none;}
+a { text-decoration: none;}
+
+body {
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.8em;
+  color: #436300;
+}
+
+section { padding: 40px 0;}
+h1 { 
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+h1 span { 
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+.img-responsive { width: 100%; }
+
+#main {
+  position: relative;
+  width: 100%;
+  height: 940px;
+  /* height: 100%; */
+  /* 이미지 사이즈: 최소 750 x 1334 px */
+  background-image: url(./images/title.png),url(./images/wallpaper.jpg);
+  background-size: 436px 478px ,100% 100%;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  text-align: center;
+  border-bottom: 1px solid #b4dbdc;
+}
+#main > .title_text {
+  /* 배색: #c4e4f3 */
+  color: #436300;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-weight: bold;
+}
+#main > .title_text > h1 {
+  margin-top: 50px;
+  font-size: 30px;
+}
+.date { 
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+}
+.address { 
+  font-size: 20px;
+  margin-bottom: 172px;
+}
+
+/* 인사말(초대...) */
+#invitation {
+  width: 100%;
+}
+#invitation h1{
+ font-size: 18px;
+}
+#smallflower {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  /* height: 100%; */
+  height: 66px;  /* 디바이스 높이 100% */
+  /* 이미지 사이즈: 최소 750 x 1334 px */
+  background-image: url(./images/flower_small.png);
+  background-size: 64px 53px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#invitation p {
+  line-height: 46px;
+  font-size: 16px;
+}
+#invitation .phone {
+  margin-top: 100px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background: #feebe5;
+
+}
+
+#invitation .phone .info {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+p, a { vertical-align: middle;}
+
+
+/* 갤러리 */
+#gallery { 
+  /* background: #b4dbdc; */
+  margin: 0 auto;
+  margin-left: 15px;
+}
+#gallery .large_img {
+  width: calc((100% / 12 * 12) - 20px);
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+#gallery h1 {
+  font-size: 18px;
+}
+#gallery .small_img li { 
+  padding: 0;
+  width: calc((100% / 12 * 4) - 18px);
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+#video {
+  background: #fcf9f9;
+}
+#location h1, #video h1 {
+  font-size: 18px;
+}
+
+.shilla h1 {
+  font-size: 18px;
+  text-align: left;
+  padding-left: 25px;
+}
+.shilla span {
+  font-size: 16px;
+  text-align: left;
+  padding-left: 25px;
+}
+.transportation {
+  font-size: 16px;
+  text-align: left;
+  padding-left: 25px;
+}
+.message h2{
+  font-size: 18px;
+  text-align: center;
+ }
+ .line{
+  width: 100%;
+  height: 1px;
+  border: 1px solid #fcf9f9;
+ }
+ .personalinfo {
+   text-align: left;
+   padding: 0 25px;
+ }
+
+ .message {
+   background-image: url(./images/wallpaper.jpg);
+   width: 100%;
+   height: 720px;
+  }
+
+ #wrapper {
+  text-align: left;
+}
+
+form {
+  padding: 10px;
+}
+
+#item {
+  vertical-align: middle;
+  width: 100%;
+  height: 30px;
+  border: 1px solid transparent;
+  border-bottom: 2px solid #fcf9f9;
+}
+#add { 
+  vertical-align: middle;
+  background-color:#feebe5;
+  border: 1px solid transparent;
+  width: 100%; height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  background: #feebe5;
+  }
+
+#itemList {
+  margin-bottom:10px;
+  border: 1px solid #c5c5c5;
+  padding: 40px;
+  font-family: "Noto Sans";
+}
+#itemList li {
+  border-bottom: 1px solid#c5c5c5;
+  text-align: left;
+  overflow: hidden;
+}
+#itemList li > .close { 
+  float: right;
+  }
+#itemList li:last-child {border-bottom: none;}
+/*#itemList li:nth-child(2n) { background: #feebe5;}*/
+
+.button {
+  background-color:#feebe5;
+  border: 1px solid transparent;
+  width: 40%; height: 50px;
+  line-height: 50px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  background: #feebe5;
+  float: left;
+  margin-left: 6%;
+  text-align: center;
+  font-family: "Noto Sans";
+  color: #436300;
+}
+footer{
+  height: 140px; width: 100%;
+  background: #363636;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 50px;
+  font-family: "Noto Sans";
+}
+#txt h1{
+  background: #363636;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.company {
+  width: 100%; height: 50px;
+  line-height: 50px;
+  color: #333333;
+}
